@@ -1,0 +1,51 @@
+[
+  {
+    "id": "first",
+    "n": 1,
+    "type": "options",
+    "q": {
+      "uz": "...uz...",
+      "ru": "...ru...",
+      "_default": "uz"
+    },
+    "a": {
+      "options": [
+        {
+            "uz": "...uz",
+            "ru": "...ru",
+            "_default": "uz"
+        },
+        {
+            "uz": "uz...",
+            "ru": "ru...",
+            "_default": "uz"
+        }
+      ]
+    }
+  },
+  {
+    "id": "second",
+    "n": 2,
+    "type": "options",
+    "q": {
+      "uz": "...uz2...",
+      "ru": "...ru2...",
+      "_default": "uz"
+    },
+    "a": {
+      "options": [
+        {
+            "uz": "...uz2",
+            "ru": "...ru2",
+            "_default": "uz"
+        },
+        {
+            "uz": "uz...2",
+            "ru": "ru...2",
+            "_default": "uz"
+        }
+      ]
+    },
+    "condition": { "$eq": [{"$value": "first"}, 0] }
+  }
+]
